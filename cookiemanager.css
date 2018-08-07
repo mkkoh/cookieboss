@@ -1,0 +1,159 @@
+.defaultFont{
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	font-size: small;
+}
+*{
+	outline: none;	
+}
+#tabs{
+	min-width:450px;
+	background-color:white;	
+}
+ 
+#tabs .ui-tabs-nav { 
+    background: transparent; 
+    border-width: 0px 0px 1px 0px; 
+} 
+/*----placeholder--------------------------------*/
+::-webkit-input-placeholder {
+   font-style:italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-style:italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-style:italic;
+}
+
+:-ms-input-placeholder {  
+   font-style:italic;
+}
+/*-----------------------------------------------------*/
+#aCookieValue{
+	resize:none;
+}
+.textareaClass{
+	resize:none;
+	overflow:auto;
+}
+/*-----------------------------------------------------*/
+.treecheckbox{
+    height: 200px;
+    overflow-y:scroll;
+	overflow-x:hidden;
+	margin:3px;
+	padding:3px;
+}
+/* Auto Remove Toggle Button ---------------------------*/
+.autoRemoveHelp{
+    width: 5em;
+}
+.removeCookieAuto {
+	display: inline-block;
+	margin-left:9px;
+	padding:2px;
+	overflow:auto;
+}
+.removeCookieAuto a{
+	color:#1C94C4;
+	font-size: 12px;
+}
+.autoRemoveOff{
+	border: 2px solid #C0C0C0;
+	border-radius: 20px;
+	height:40px;
+	width:85px;
+	background-color:white;
+}
+.autoRemoveOff button{
+	border: 3px solid #C0C0C0;
+	border-radius: 100%;
+	height:44px;
+	width:44px;
+	text-align: center;
+	font-weight: bold;
+	color: #808080;
+	background-color:white;
+	float:left;
+	margin: -2.0px 0 0 -3px;  
+}
+.autoRemoveOn{
+	background-color:#00FF99;
+	border-color: #00FF99;
+}
+.autoRemoveOn button{
+	float:right;
+	margin: -2.0px -3px 0 0;
+	border: 2.5px solid #00FF99;
+}
+.autoRemoveOff button:hover, .autoRemoveOn button:hover{
+	color: #181818;
+}
+/* add domain autocomplete----------------------------*/
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  * html .ui-autocomplete {
+    height: 100px;
+  }
+/*-----------------------------------------------------*/
+#notifications {
+    cursor: pointer;
+    position: fixed;
+    right: 0px;
+    z-index: 9999;
+    bottom: 0px;
+    margin-bottom: 22px;
+    margin-right: 15px;
+    max-width: 300px;   
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    opacity: 1;
+    max-height: 1000px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
